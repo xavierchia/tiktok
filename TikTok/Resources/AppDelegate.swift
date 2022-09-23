@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // this is to set up first VC programatically for > iOS 13 (see SceneDelegate for < iOS13)
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = ViewController()
+        window.rootViewController = HomeViewController()
         self.window = window
         self.window?.makeKeyAndVisible()
         
