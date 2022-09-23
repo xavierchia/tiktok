@@ -23,6 +23,7 @@
 		2552B85028DD2EEB0015855F /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2552B84F28DD2EEB0015855F /* AuthenticationManager.swift */; };
 		2552B85228DD32C40015855F /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2552B85128DD32C40015855F /* HapticsManager.swift */; };
 		4CA7E813507280926FD4E2F5 /* Pods_TikTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE388D04057D9F342A73C52B /* Pods_TikTok.framework */; };
+		9539BFE328DE786100AD56E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9539BFE228DE786100AD56E0 /* GoogleService-Info.plist */; };
 		958AB2EA28DBD015000DB9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958AB2E928DBD015000DB9CB /* AppDelegate.swift */; };
 		958AB2EC28DBD015000DB9CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958AB2EB28DBD015000DB9CB /* SceneDelegate.swift */; };
 		958AB2EE28DBD015000DB9CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958AB2ED28DBD015000DB9CB /* HomeViewController.swift */; };
@@ -48,6 +49,7 @@
 		2552B84F28DD2EEB0015855F /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		2552B85128DD32C40015855F /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		610BB30D0DCBF810C9B04A54 /* Pods-TikTok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok.release.xcconfig"; path = "Target Support Files/Pods-TikTok/Pods-TikTok.release.xcconfig"; sourceTree = "<group>"; };
+		9539BFE228DE786100AD56E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		958AB2E628DBD015000DB9CB /* TikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		958AB2E928DBD015000DB9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		958AB2EB28DBD015000DB9CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				958AB2F228DBD018000DB9CB /* Assets.xcassets */,
 				958AB2E928DBD015000DB9CB /* AppDelegate.swift */,
 				958AB2EB28DBD015000DB9CB /* SceneDelegate.swift */,
+				9539BFE228DE786100AD56E0 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -210,7 +213,6 @@
 				1D3FA1DA7E7BA0032F20B8C8 /* Pods-TikTok.debug.xcconfig */,
 				610BB30D0DCBF810C9B04A54 /* Pods-TikTok.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -225,6 +227,7 @@
 				958AB2E228DBD015000DB9CB /* Sources */,
 				958AB2E328DBD015000DB9CB /* Frameworks */,
 				958AB2E428DBD015000DB9CB /* Resources */,
+				8343643C22E6ADAFF9E92EAF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,6 +278,7 @@
 			files = (
 				958AB2F628DBD018000DB9CB /* LaunchScreen.storyboard in Resources */,
 				958AB2F328DBD018000DB9CB /* Assets.xcassets in Resources */,
+				9539BFE328DE786100AD56E0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +305,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8343643C22E6ADAFF9E92EAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikTok/Pods-TikTok-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikTok/Pods-TikTok-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TikTok/Pods-TikTok-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

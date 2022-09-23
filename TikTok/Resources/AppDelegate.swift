@@ -5,6 +5,7 @@
 //  Created by xavier chia on 22/9/22.
 //
 
+import Firebase
 import UIKit
 
 @main
@@ -19,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = HomeViewController()
         self.window = window
         self.window?.makeKeyAndVisible()
+        
+        FirebaseApp.configure()
         
         return true
     }
